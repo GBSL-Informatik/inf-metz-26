@@ -1,0 +1,27 @@
+---
+page_id: 59cfc689-1d81-4f9a-ac26-0e78846cc96e
+sidebar_position: 0
+---
+import Semesterplan from "@tdev-components/Semesterplan";
+import einzellektion from './einzellektion.json';
+import praktikum from './praktikum.json';
+import termine_fs26 from './termine_fs26.json';
+import termine_hs26 from './termine_hs26.json';
+import Directory from '@tdev-components/documents/FileSystem/Directory';
+
+# Informatik 29Gn
+<Semesterplan termine={termine_hs26} />
+
+<details>
+    <summary>2. Semester GYM1</summary>
+    <Semesterplan termine={einzellektion} />
+</details>
+
+<details>
+    <summary>1. Semester GYM1</summary>
+    <Semesterplan einzellektion={termine_fs26} praktikum={praktikum} />
+</details>
+
+<Directory name='Notizen' id='2e9b192e-a30e-4d96-8217-f57e7e627c47' />
+
+---

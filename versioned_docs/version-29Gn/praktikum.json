@@ -1,0 +1,201 @@
+[
+  {
+    "cells": [
+      "19.08.2025",
+      "B",
+      "Algorithmen",
+      "Einführung, Definition"
+    ]
+  },
+  {
+    "cells": [
+      "26.08.2025",
+      "A",
+      "Algorithmen",
+      "Einführung, Definition"
+    ]
+  },
+  {
+    "cells": [
+      "02.09.2025",
+      "B",
+      "Algorithmen",
+      "Kontrollstrukturen"
+    ]
+  },
+  {
+    "cells": [
+      "09.09.2025",
+      "A",
+      "Algorithmen",
+      "Kontrollstrukturen"
+    ]
+  },
+  {
+    "cells": [
+      "16.09.2025",
+      "B",
+      "Algorithmen",
+      "Flussdiagramme"
+    ]
+  },
+  {
+    "cells": [
+      "23.09.2025",
+      "A",
+      "Algorithmen",
+      "Flussdiagramme"
+    ]
+  },
+  {
+    "cells": [
+      "30.09.2025",
+      "",
+      "Sonderwoche",
+      "Klassenlager"
+    ],
+    "type": "event"
+  },
+  {
+    "cells": [
+      "07.10.2025",
+      "",
+      "Herbstferien",
+      ""
+    ],
+    "type": "holiday"
+  },
+  {
+    "cells": [
+      "14.10.2025",
+      "",
+      "Herbstferien",
+      ""
+    ],
+    "type": "holiday"
+  },
+  {
+    "cells": [
+      "21.10.2025",
+      "B",
+      "Algorithmen",
+      "Struktogramme"
+    ]
+  },
+  {
+    "cells": [
+      "28.10.2025",
+      "A",
+      "Algorithmen & Programmieren",
+      "Struktogramme, Turtle Einstieg"
+    ]
+  },
+  {
+    "cells": [
+      "04.11.2025",
+      "B",
+      "Programmieren",
+      "Einstieg"
+    ]
+  },
+  {
+    "cells": [
+      "11.11.2025",
+      "A",
+      "Programmieren",
+      "Farben & for-Schleife"
+    ]
+  },
+  {
+    "cells": [
+      "18.11.2025",
+      "B",
+      "",
+      "Entfall"
+    ],
+    "type": "event"
+  },
+  {
+    "cells": [
+      "25.11.2025",
+      "A",
+      "Programmieren",
+      "while-Schleife, Variablen, Datentypen"
+    ]
+  },
+  {
+    "cells": [
+      "02.12.2025",
+      "",
+      "Studienwahltag",
+      "Entfall"
+    ],
+    "type": "event"
+  },
+  {
+    "cells": [
+      "09.12.2025",
+      "B",
+      "Programmieren",
+      "for-Schleife, while-Schleife, Variablen, Datentypen"
+    ]
+  },
+  {
+    "cells": [
+      "16.12.2025",
+      "A",
+      "Programmieren",
+      "Zufall, Eingabe & Ausgabe"
+    ]
+  },
+  {
+    "cells": [
+      "23.12.2025",
+      "",
+      "Winterferien",
+      ""
+    ],
+    "type": "holiday"
+  },
+  {
+    "cells": [
+      "30.12.2025",
+      "",
+      "Winterferien",
+      ""
+    ],
+    "type": "holiday"
+  },
+  {
+    "cells": [
+      "06.01.2026",
+      "B",
+      "Programmieren",
+      "Zufall, Eingabe & Ausgabe"
+    ]
+  },
+  {
+    "cells": [
+      "13.01.2026",
+      "A",
+      "Programmieren",
+      "Verzweigung"
+    ]
+  },
+  {
+    "cells": [
+      "20.01.2026",
+      "B",
+      "Programmieren",
+      "Verzweigung"
+    ]
+  },
+  {
+    "cells": [
+      "27.01.2026",
+      "A",
+      "",
+      ""
+    ]
+  }
+]

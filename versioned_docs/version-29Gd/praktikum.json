@@ -1,0 +1,200 @@
+[
+  {
+    "cells": [
+      "18.08.2025",
+      "A",
+      "Entfall",
+      ""
+    ],
+    "type": "event"
+  },
+  {
+    "cells": [
+      "25.08.2025",
+      "B",
+      "Algorithmen",
+      "Einführung, Definition, Kontrollstrukturen"
+    ]
+  },
+  {
+    "cells": [
+      "01.09.2025",
+      "A",
+      "Algorithmen",
+      "Einführung, Definition, Kontrollstrukturen"
+    ]
+  },
+  {
+    "cells": [
+      "08.09.2025",
+      "B",
+      "Algorithmen",
+      "Flussdiagramme"
+    ]
+  },
+  {
+    "cells": [
+      "15.09.2025",
+      "A",
+      "Algorithmen",
+      "Flussdiagramme"
+    ]
+  },
+  {
+    "cells": [
+      "22.09.2025",
+      "B",
+      "Algorithmen",
+      "Struktogramme"
+    ]
+  },
+  {
+    "cells": [
+      "29.09.2025",
+      "",
+      "Sonderwoche",
+      "Klassenlager"
+    ],
+    "type": "event"
+  },
+  {
+    "cells": [
+      "06.10.2025",
+      "",
+      "Herbstferien",
+      ""
+    ],
+    "type": "holiday"
+  },
+  {
+    "cells": [
+      "13.10.2025",
+      "",
+      "Herbstferien",
+      ""
+    ],
+    "type": "holiday"
+  },
+  {
+    "cells": [
+      "20.10.2025",
+      "A",
+      "Algorithmen",
+      "Struktogramme"
+    ]
+  },
+  {
+    "cells": [
+      "27.10.2025",
+      "B",
+      "Programmieren",
+      "Einstieg"
+    ]
+  },
+  {
+    "cells": [
+      "03.11.2025",
+      "A",
+      "Programmieren",
+      "Einstieg"
+    ]
+  },
+  {
+    "cells": [
+      "10.11.2025",
+      "B",
+      "Programmieren",
+      "Farben & for-Schleife"
+    ]
+  },
+  {
+    "cells": [
+      "17.11.2025",
+      "A",
+      "Programmieren",
+      "Farben & for-Schleife"
+    ]
+  },
+  {
+    "cells": [
+      "24.11.2025",
+      "B",
+      "Programmieren",
+      "while-Schleife, Variablen, Datentypen"
+    ]
+  },
+  {
+    "cells": [
+      "01.12.2025",
+      "A",
+      "Programmieren",
+      "while-Schleife, Variablen, Datentypen"
+    ]
+  },
+  {
+    "cells": [
+      "08.12.2025",
+      "B",
+      "Programmieren",
+      "Eingabe & Ausgabe"
+    ]
+  },
+  {
+    "cells": [
+      "15.12.2025",
+      "A",
+      "Programmieren",
+      "Eingabe & Ausgabe"
+    ]
+  },
+  {
+    "cells": [
+      "22.12.2025",
+      "",
+      "Winterferien",
+      ""
+    ],
+    "type": "holiday"
+  },
+  {
+    "cells": [
+      "29.12.2025",
+      "",
+      "Winterferien",
+      ""
+    ],
+    "type": "holiday"
+  },
+  {
+    "cells": [
+      "05.01.2026",
+      "B",
+      "Programmieren",
+      "Verzweigung"
+    ]
+  },
+  {
+    "cells": [
+      "12.01.2026",
+      "A",
+      "Programmieren",
+      "Verzweigung"
+    ]
+  },
+  {
+    "cells": [
+      "19.01.2026",
+      "B",
+      "",
+      ""
+    ]
+  },
+  {
+    "cells": [
+      "26.01.2026",
+      "B",
+      "",
+      ""
+    ]
+  }
+]

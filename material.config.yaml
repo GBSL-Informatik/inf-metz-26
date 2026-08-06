@@ -1,4 +1,51 @@
 pages: []
-docs:
-  - from: packages/tdev/material-sync/README.mdx
-    to: tdev-website/docs/intro/03-class-management/index.mdx
+30Gi:
+  - material: Onboarding-2025
+    as: 01-Onboarding
+  - material: Erste-Hilfe
+    as: 02-Erste-Hilfe
+  - material: Computer-Hacks
+    as: 03-Computer-Hacks
+  - material: Programmieren-2026
+    as: 04-Programmieren
+
+29Gn:
+  - material: Onboarding-2025
+    as: 01-Onboarding
+  - material: Erste-Hilfe
+    as: 02-Erste-Hilfe
+  - material: BYOD-Basics-2025
+    as: 03-BYOD-Basics
+  - material: Programmieren-2025
+    as: 04-Programmieren
+  - material: IN-Biber/2025
+    as: 05-IN-Biber-2025
+  - material: SOL-Text-Adventure
+    as: 06-SOL-Text-Adventure
+  # - material: tw_confidential-material/Probe-Turtle-2-GYM29-29Gn
+  #   as: 07-Probe-Turtle-2
+  - material: Textverarbeitung-Style
+    as: 08-Textverarbeitung-und-Style
+  - material: Information-Daten
+    as: 09-Information-Daten  
+  # - material: Repetition-2025/Repetition-GYM28-Kurz.mdx
+  #   as: 08-Repetition-IN-GYM1/index.mdx
+29Gd:
+  - material: Onboarding-2025
+    as: 01-Onboarding
+  - material: Erste-Hilfe
+    as: 02-Erste-Hilfe
+  - material: BYOD-Basics-2025
+    as: 03-BYOD-Basics
+  - material: Programmieren-2025
+    as: 04-Programmieren
+  - material: IN-Biber/2025
+    as: 05-IN-Biber-2025
+  - material: SOL-Text-Adventure
+    as: 06-SOL-Text-Adventure
+  # - material: tw_confidential-material/Probe-Turtle-2-GYM29-29Gd
+  #   as: 07-Probe-Turtle-2
+  - material: Textverarbeitung-Style
+    as: 08-Textverarbeitung-und-Style
+  - material: Information-Daten
+    as: 09-Information-Daten
