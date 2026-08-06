@@ -7,8 +7,8 @@ Sie haben bereits mit HTML und CSS gearbeitet und eine eigene Webseite erstellt?
 ## XAMPP einrichten
 Um Ihren Laptop als Web Server verwenden zu können, müssen Sie zuerst ein entsprechendes Programm installieren. Wir verwenden dazu eine Software namens _XAMPP_. Gehen Sie für die Einrichtung von XAMPP wie folgt vor:
 
-::::Tabs{groupId="os"}
-:::Tab[Windows]{value="windows"}
+<Tabs groupId="os">
+<TabItem value="windows" label="Windows">
 1. Laden Sie die [aktuellste Version von XAMPP](https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.2.12/xampp-windows-x64-8.2.12-0-VS16-installer.exe) herunter.
 2. Führen Sie die heruntergeladene Datei aus, um das Programm zu installieren. Akzeptieren Sie dabei alle Standardeinstellungen.
 3. Wenn die Windows Defender Firewall um Erlaubnis fragt, erlauben Sie den Zugriff sowohl für private als auch für öffentliche Netzwerke (siehe Screenshot).
@@ -19,31 +19,33 @@ Um Ihren Laptop als Web Server verwenden zu können, müssen Sie zuerst ein ents
   Windows Firewall: Zugriff für private und öffentliche Netzwerke erlauben.
 :::
 
-:::Tab[macOS]{value="macos"}
+</TabItem>
+
+<TabItem value="macos" label="macOS">
 1. Laden Sie die [aktuellste Version von XAMPP](https://sourceforge.net/projects/xampp/files/XAMPP%20Mac%20OS%20X/8.2.4/xampp-osx-8.2.4-0-installer.dmg) herunter.
 2. Führen Sie die heruntergeladene Datei aus, um das Programm zu installieren. Akzeptieren Sie dabei alle Standardeinstellungen.
 3. Schliessen Sie die Installation ab und öffnen Sie am Schluss das _XAMPP Control Panel_.
-:::
-::::
+</TabItem>
+</Tabs>
 
 ## Web Server starten
-::::Tabs{groupId="os"}
-:::Tab[Windows]{value="windows"}
+<Tabs groupId="os">
+<TabItem value="windows" label="Windows">
 Sobald Sie XAMPP installiert haben, starten Sie im Control Panel das _Apache_-Modul:
 ![](img/xampp-control-panel-start-apache.png)
 
 Wenn alles funktioniert hat, sollte das Control Panel am Schluss wie folgt aussehen:
 ![](img/xampp-control-panel-apache-running.png)
-:::
+</TabItem>
 
-:::Tab[macOS]{value="macos"}
+<TabItem value="macos" label="macOS">
 Sobald Sie XAMPP installiert haben, starten Sie im Control Panel das _Apache Web Server_-Modul:
 ![](img/xampp-control-panel-start-apache-macos.png)
 
 Wenn alles funktioniert hat, sollte das Control Panel am Schluss wie folgt aussehen:
 ![](img/xampp-control-panel-apache-running-macos.png)
-:::
-::::
+</TabItem>
+</Tabs>
 
 Um das zu kontrollieren, rufen Sie die Adresse http://127.0.0.1 auf. Es sollte folgende Webseite angezeigt werden:
 ![](img/xampp-default-page.png)
@@ -56,15 +58,15 @@ Sie haben damit auch gleich eine spezielle IP-Adresse kennengelernt: `127.0.0.1`
 Ihr Laptop funktioniert nun also als Web Server. Eine von diesem Web Server angebotene Webseite haben Sie am Ende des letzten Schritts bereits gesehen. Jetzt sollen Sie aber auch Ihre eigene Webseite über diesen Server anbieten, die Sie bereits erstellt haben.
 
 Öffnen Sie dazu zuerst den XAMPP `htdocs`-Ordner:
-::::Tabs{groupId="os"}
-:::Tab[Windows]{value="windows"}
+<Tabs groupId="os">
+<TabItem value="windows" label="Windows">
 Der XAMPP `htdocs`-Ordner befindet sich unter `C:\xampp\htdocs`.
-:::
+</TabItem>
 
-:::Tab[macOS]{value="macos"}
+<TabItem value="macos" label="macOS">
 Der XAMPP `htdocs`-Ordner befindet sich unter `Programme → XAMPP → xamppfiles → htdocs`.
-:::
-::::
+</TabItem>
+</Tabs>
 
 :::info[Zur Orientierung...]
 Im XAMPP `htdocs`-Ordner finden Sie einige Dateien wie `index.php` und `applications.html`, sowie einige Ordner wie `dashboard` und `img`. Wenn Sie diese sehen, dann sind sie am richtigen Ort.

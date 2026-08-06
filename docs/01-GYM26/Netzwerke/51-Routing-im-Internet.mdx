@@ -79,23 +79,23 @@ Für die Kommunikation mit Geräten ausserhalb des eigenen Netzwerks müssen die
 ### Standardgateway ihres Laptops
 So bestimmen Sie das Standardgateway Ihres Laptops:
 
-::::Tabs{groupId="os"}
-:::Tab[Windows]{value="windows"}
+<Tabs groupId="os">
+<TabItem value="windows" label="Windows">
 ```.sh title="In der Kommandozeile (cmd) eingeben"
 ipconfig
 ```
 
 ![](img/ipconfig.png)
-:::
+</TabItem>
 
-:::Tab[macOS]{value="macos"}
+<TabItem value="macos" label="macOS">
 ```.sh title="In der Koommandozeile (terminal) eingeben"
 netstat -nr
 ```
 
 ![](img/netstat.png)
-:::
-::::
+</TabItem>
+</Tabs>
 
 :::insight[Nicht überall gleich]
 Zu Hause haben Sie als Standardgateway die IP-Adresse Ihres Routers/Modems eingetragen – also dem Gerät, das Sie von Ihrem Internet-Anbieter erhalten, um Zugang zum Internet zu erhalten.
@@ -109,17 +109,17 @@ Falls Sie ihr aktuelles Standardgateway noch nicht kennen, dann finden Sie es je
 Der Befehl `traceroute` (macOS) resp. `tracert` (Windows) kann diese Route nachverfolgt werden. Dabei werden die Zwischenstationen – also dort wo das Paket entpackt und gemäss Ziel-IP-Adresse weitergeleitet wird – angezeigt.
 
 :::::aufgabe[traceroute]
-::::Tabs{groupId="os"}
-:::Tab[Windows]{value="windows"}
+<Tabs groupId="os">
+<TabItem value="windows" label="Windows">
 Öffnen Sie eine Eingabeaufforderung (cmd) und geben Sie nacheinander die folgenden drei Befehl ein:
 ```.sh title="In der Kommandozeile (cmd)"
 tracert office.com
 tracert www.google.ch
 tracert www.lerbermatt.ch
 ```
-:::
+</TabItem>
 
-:::Tab[macOS]{value="macos"}
+<TabItem value="macos" label="macOS">
 Öffnen Sie eine Eingabeaufforderung (terminal) und geben Sie nacheinander die folgenden drei Befehl ein:
 
 ```.sh title="In der Kommandozeile (terminal)"
@@ -127,8 +127,8 @@ traceroute office.com
 traceroute www.google.ch
 traceroute www.lerbermatt.ch
 ```
-:::
-::::
+</TabItem>
+</Tabs>
 
 Beobachten Sie den Output. Erkennen Sie Gemeinsamkeiten oder irgendeine spezielle Zwischenstation?
 
