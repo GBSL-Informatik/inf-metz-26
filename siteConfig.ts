@@ -134,15 +134,6 @@ const getSiteConfig: SiteConfigProvider = () => {
                 searchPagePath: 'search'
             }
         },
-        scripts: [
-            {
-                src: 'https://umami.gbsl.website/tell-me.js',
-                ['data-website-id']: process.env.UMAMI_ID,
-                ['data-domains']: 'classrooms.app',
-                async: true,
-                defer: true
-            }
-        ],
         gitHub: {
             orgName: 'GBSL-Informatik',
             projectName: 'inf-metz-26'
