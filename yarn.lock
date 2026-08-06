@@ -6630,7 +6630,7 @@ accepts@~1.3.4, accepts@~1.3.8:
     mime-types "~2.1.34"
     negotiator "0.6.3"
 
-ace-builds@^1.36.3, ace-builds@^1.43.6:
+ace-builds@^1.36.3, ace-builds@^1.44.0:
   version "1.44.0"
   resolved "https://registry.yarnpkg.com/ace-builds/-/ace-builds-1.44.0.tgz#d657730f665fccf72d2945d95887e12c514a29f1"
   integrity sha512-PFNMSYqFdEUkul2Ntud0HvA09AgY+F1ag0UYdpMH60wNI/qOA8cB8tlTgoALMEwIdUPJK2CjrIQ7OnbiSS/ugQ==
@@ -7038,7 +7038,7 @@ before-after-hook@^3.0.2:
   resolved "https://registry.yarnpkg.com/before-after-hook/-/before-after-hook-3.0.2.tgz#d5665a5fa8b62294a5aa0a499f933f4a1016195d"
   integrity sha512-Nik3Sc0ncrMK4UUdXQmAnRtzmNQTAAXmXIopizwZ1W1t8QmfJj+zL4OA2I7XPTPW5z5TDqv4hRo/JzouDJnX3A==
 
-better-auth@^1.6.23:
+better-auth@^1.6.26:
   version "1.6.26"
   resolved "https://registry.yarnpkg.com/better-auth/-/better-auth-1.6.26.tgz#f6e518eb0d9922293e33c55ae493a34a3689f480"
   integrity sha512-nhXWrDDj+EnZsHq1j0z1c6DowOMFZWZHe6LCaXbBfLIgHHZm6dyazBQcbRspM4spUIcUt250Mc1BFOSuP7eniQ==
@@ -12178,22 +12178,20 @@ mkdirp-classic@^0.5.2, mkdirp-classic@^0.5.3:
   dependencies:
     minimist "^1.2.6"
 
-mobx-react-lite@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/mobx-react-lite/-/mobx-react-lite-4.1.1.tgz#725d74b025235f73dc2ab815766ffe010be2cf8a"
-  integrity sha512-iUxiMpsvNraCKXU+yPotsOncNNmyeS2B5DKL+TL6Tar/xm+wwNJAubJmtRSeAoYawdZqwv8Z/+5nPRHeQxTiXg==
-  dependencies:
-    use-sync-external-store "^1.4.0"
+mobx-react-lite@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/mobx-react-lite/-/mobx-react-lite-5.0.0.tgz#77f71816162b72da2505d1e2a577be03bc6eb3f5"
+  integrity sha512-+Kg+KhOQx/ggkFuHViUJvsOsgmAFvBUHfGb/cimNX5Csb1MfMYjbp5CcUu6kw2zr11HwB1gaD7FnqdAcCryvhg==
 
 mobx-utils@^6.1.1:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/mobx-utils/-/mobx-utils-6.1.1.tgz#61c66563e7646fb75462c189f4110a76d2e35768"
   integrity sha512-ZR4tOKucWAHOdMjqElRl2BEvrzK7duuDdKmsbEbt2kzgVpuLuoYLiDCjc3QwWQl8CmOlxPgaZQpZ7emwNqPkIg==
 
-mobx@^6.16.1:
-  version "6.16.1"
-  resolved "https://registry.yarnpkg.com/mobx/-/mobx-6.16.1.tgz#8b3166186d1298b1848395e10e64b5c43d6dc43b"
-  integrity sha512-syNcDdX3KT+Jq3je6eGjBhuc24Z68td2VG0zNFqRswaE433D9SNH5VRy/xrGbJsUixfppLLccXhAW9JSf6n+SQ==
+mobx@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/mobx/-/mobx-7.0.0.tgz#3228a0be641229a3c64ca5363fcbf4f605e6a8ce"
+  integrity sha512-J+hR/wq6RdBnB4QXQRqGrWL9vOOLKaYhXh0ooxLAW4AE72av10Y5+xiaxohUYmPZiUswfpxMjQooYqpWkv+Fxg==
 
 moment@^2.30.1:
   version "2.30.1"
@@ -13679,10 +13677,10 @@ rc@1.2.8, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-ace@^14.0.1:
-  version "14.1.0"
-  resolved "https://registry.yarnpkg.com/react-ace/-/react-ace-14.1.0.tgz#2b0ee87ec98d6934514adddf8e682071f890a500"
-  integrity sha512-H+Tuw1oa3uP6zRoLBOayPVaMy5Le4G33OpEmLOfSVks75ajmrmFGbyWWEHfBYLCCpu5KfyFlod9jCEUc7i5ekw==
+react-ace@^15.0.0:
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/react-ace/-/react-ace-15.0.0.tgz#4a8b377c924e23f4ae934fee473e14c283237787"
+  integrity sha512-gdmS5ftF0hsbkcrAjZQqYbXwFg5JrHuxjki8mP6Bn9kfa6lHKfZk9sU9EfS0ifQ1CpGCmRxF/VC7GRvlJMBuZw==
   dependencies:
     ace-builds "^1.36.3"
     diff-match-patch "^1.0.5"
