@@ -6,6 +6,10 @@ sidebar_custom_props:
 page_id: 098556a5-b06f-4e13-9919-0c59c262563d
 ---
 
+
+import TileGrid from '@tdev-components/tiles/TileGrid';
+import Tile from '@tdev-components/tiles/Tile';
+
 # XOR-Verschlüsselung
 Da wir nun mit Bits arbeiten und nicht mehr mit Buchstaben, müssen wir nach anderen Möglichkeiten zur Verschlüsselung suchen. Alphabetverschiebungen wie bei Caesar und Substitutionen sind nicht mehr geeignete Mittel, wenn nur die Zahlen `0` und `1` zur Verfügung stehen.
 
@@ -17,8 +21,8 @@ XOR kann auch zur Verschlüsselung verwendet werden. Dabei wird jeweils 1 Bit de
 
 Die Wahrheitstabelle[^1] sieht folgendermassen aus:
 
-::::Tiles{preventGrowOnHover="true" layout="large"}
-:::Tile[Verschlüsselung]
+<TileGrid preventGrowOnHover="true" layout="large">
+<Tile title="Verschlüsselung" >
 <div className="table-full-width">
   |  *p*  |  *k*  | *c* = *p* **XOR** *k* |
   | :---: | :---: | :-------------------: |
@@ -31,9 +35,10 @@ Die Wahrheitstabelle[^1] sieht folgendermassen aus:
 p: *plain text* (Klartext) <br/>
 k: *key* (Schlüssel) <br/>
 c: *cipher* (Verschlüsselt)
-:::
 
-:::Tile[Entschlüsselung]
+
+</Tile>
+<Tile title="Entschlüsselung" >
 <div className="table-full-width">
 |  *c*  |  *k*  | *p* = *c* **XOR** *k* |
 | :---: | :---: | :-------------------: |
@@ -42,8 +47,9 @@ c: *cipher* (Verschlüsselt)
 |   1   |   0   |           1           |
 |   0   |   1   |           1           |
 </div>
-:::
-::::
+
+</Tile>
+</TileGrid>
 
 ## Bezug zu ROT13
 Analog zu [ROT13](../Antike/Caesar#rot13) gilt auch hier: Die Verschlüsselung ist identisch mit der Entschlüsselung, da folgendes gilt:

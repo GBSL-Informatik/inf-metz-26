@@ -6,6 +6,10 @@ sidebar_custom_props:
 page_id: 71ef364c-bc3a-41af-b1c4-94b5a938283c
 ---
 
+
+import TileGrid from '@tdev-components/tiles/TileGrid';
+import Tile from '@tdev-components/tiles/Tile';
+
 import DefinitionList from "@tdev-components/DefinitionList";
 
 # Authentifizierung
@@ -16,28 +20,31 @@ import DefinitionList from "@tdev-components/DefinitionList";
 
 Es gibt drei verschiedene Wege, wie sich eine Person authentisieren kann:
 
-::::Tiles
-:::Tile[Wissen]
+<TileGrid>
+<Tile title="Wissen" >
 ![](img/password.jpg)
 _Etwas, das man weiss._
 
 Die Person weiss etwas, z.B. ein Passwort oder eine Pin
-:::
 
-:::Tile[Besitz]
+
+</Tile>
+<Tile title="Besitz" >
 ![](img/keys.jpg)
 _Etwas, das man hat._
 
 Die Person besitzt etwas, z.B. eine Kreditkarte oder einen Schlüssel.
-:::
 
-:::Tile[Merkmal]
+
+</Tile>
+<Tile title="Merkmal" >
 ![](img/eye.jpg)
 _Etwas, das man ist._
 
 Die Person wird über körperliches Merkmal identifiziert, z.B. einen Fingerabdruck oder die Iris.
-:::
-::::
+
+</Tile>
+</TileGrid>
 
 <br/>
 

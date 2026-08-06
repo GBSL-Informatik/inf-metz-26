@@ -2,20 +2,24 @@
 page_id: f70299ba-37f3-4381-a1b2-5887005b04e6
 ---
 
+
+import TileGrid from '@tdev-components/tiles/TileGrid';
+import Tile from '@tdev-components/tiles/Tile';
+
 <head>
   <body className='no-search'></body>
 </head>
 
 # Wählen Sie Ihre Klasse
-::::Tiles{layout="small"}
-:::Tile[29Gd]{href="29Gd"}
-:::
+<TileGrid layout="small">
+<Tile title="29Gd" href="29Gd" />
 
-:::Tile[29Gn]{href="29Gn"}
-:::
 
-:::Tile[30Gi]{href="30Gi"}
-:::
-::::
+<Tile title="29Gn" href="29Gn" />
+
+
+<Tile title="30Gi" href="30Gi" />
+
+</TileGrid>
 
 ---
