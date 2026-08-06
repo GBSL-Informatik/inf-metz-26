@@ -13,7 +13,9 @@ import Solution from '@tdev-components/documents/Solution';
 import MdxComment from '@tdev-components/documents/MdxComment';
 import MdxPage from '@tdev-components/MdxPage';
 import QuillV2 from '@tdev-components/documents/QuillV2';
+import String from '@tdev-components/documents/String';
 import TaskState from '@tdev-components/documents/TaskState';
+import ProgressState from '@tdev-components/documents/ProgressState';
 
 export default {
     // Re-use the default mapping
@@ -32,5 +34,6 @@ export default {
     Solution: Solution,
     TaskState: TaskState,
     MdxPage: MdxPage,
-    MdxComment: MdxComment
+    MdxComment: MdxComment,
+    ProgressState: ProgressState
 };
