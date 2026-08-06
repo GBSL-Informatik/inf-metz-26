@@ -3,7 +3,7 @@
 ## 5.8.2026
 https://github.com/GBSL-Informatik/teaching-dev/pull/299
 
-- [💥 Breaking] upgrade mobx@7 - `@observable.ref` is now `@observableRef` - make sure to update custom components accordingly. See the (simple) [migration guide](https://mobx.js.org/migrating-from-6-to-7.html) for completeness.
+- [💥 Breaking] upgrade mobx@7 - `@observableRef` is now `@observableRef` - make sure to update custom components accordingly. See the (simple) [migration guide](https://mobx.js.org/migrating-from-6-to-7.html) for completeness.
 - [💅 Polish] The Ace Editor now tracks transient updates s.t. IME specific text deltas can be handled correctly.
 
 ## 4.8.2026
