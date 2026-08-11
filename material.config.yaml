@@ -1,6 +1,6 @@
 pages: []
 30Gi:
-  - material: Onboarding-2025
+  - material: Onboarding-2026
     as: 01-Onboarding
   - material: Erste-Hilfe
     as: 02-Erste-Hilfe
