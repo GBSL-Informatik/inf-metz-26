@@ -118,16 +118,6 @@ const docusaurusConfig = withSiteConfig().then(async (siteConfig) => {
       tagline: siteConfig.tagline ?? 'Eine Plattform zur Gestaltung interaktiver Lernerlebnisse',
       favicon: siteConfig.favicon ?? 'img/favicon.ico',
 
-      headTags: [
-        {
-          tagName: 'meta',
-          attributes: {
-            name: 'algolia-site-verification',
-            content: '7D75410D2CF8AA5E'
-          }
-        }
-      ],
-
       // Set the production url of your site here
       url: siteConfig.url ?? 'https://teaching-dev.gbsl.website',
       // Set the /<baseUrl>/ pathname under which your site is served
