@@ -10,6 +10,47 @@ Zur Erstellung von Struktogrammen für Arbeitsblätter und Folien.
 
 ## Probe
 
+### Escape Room
+
+<Struktogramm program={[
+  {type: 'input', code: <span>Eingabe: <span className="var">anzahl_personen</span>, <span className="var">volljaehrig</span>, <span className="var">begleitperson</span></span>},
+
+  {type: 'step', code: <span><span className="var">zutritt</span> = nein</span>},
+  {type: 'step', code: <span><span className="var">preis</span> = 25</span>},
+
+  {type: 'if', code: <span>Wenn <span className="var">anzahl_personen</span> ≥ 2:</span>, block: [
+
+      {type: 'if', code: <span>Wenn <span className="var">anzahl_personen</span> &lt; 4:</span>, block: [
+
+          {type: 'if', code: <span>Wenn <span className="var">volljaehrig</span> == ja:</span>, block: [
+              {type: 'step', code: <span><span className="var">zutritt</span> = ja</span>},
+            ]},
+
+          {type: 'if', code: <span>Sonst:</span>, block: [
+              {type: 'if', code: <span>Wenn <span className="var">begleitperson</span> == ja:</span>, block: [
+                  {type: 'step', code: <span><span className="var">zutritt</span> = ja</span>},
+                ]},
+            ]},
+        ]},
+
+      {type: 'if', code: <span>Sonst:</span>, block: [
+          {type: 'step', code: <span><span className="var">zutritt</span> = ja</span>},
+        ]},
+
+      {type: 'if', code: <span>Wenn <span className="var">anzahl_personen</span> ≥ 6:</span>, block: [
+          {type: 'step', code: <span><span className="var">preis</span> = 20</span>},
+        ]},
+    ]},
+
+  {type: 'if', code: <span>Wenn <span className="var">zutritt</span> == ja:</span>, block: [
+      {type: 'output', code: <span>Ausgabe: Zutritt, <span className="var">preis</span> CHF pro Person</span>},
+    ]},
+
+  {type: 'if', code: <span>Sonst:</span>, block: [
+      {type: 'output', code: <span>Ausgabe: Kein Zutritt</span>},
+    ]},
+]} />
+
 ### n!
 
 <Struktogramm program={[
