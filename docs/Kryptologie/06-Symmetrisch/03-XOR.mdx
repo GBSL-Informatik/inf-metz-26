@@ -21,34 +21,31 @@ XOR kann auch zur Verschlüsselung verwendet werden. Dabei wird jeweils 1 Bit de
 
 Die Wahrheitstabelle[^1] sieht folgendermassen aus:
 
-<TileGrid preventGrowOnHover="true" layout="large">
-<Tile title="Verschlüsselung" >
-<div className="table-full-width">
-  |  *p*  |  *k*  | *c* = *p* **XOR** *k* |
-  | :---: | :---: | :-------------------: |
-  |   0   |   0   |           0           |
-  |   0   |   1   |           1           |
-  |   1   |   0   |           1           |
-  |   1   |   1   |           0           |
-</div>
+<TileGrid layout="large" preventGrowOnHover>
+  <Tile title="Verschlüsselung">
+    <div className="table-full-width">
+      |  *p*  |  *k*  | *c* = *p* **XOR** *k* |
+      | :---: | :---: | :-------------------: |
+      |   0   |   0   |           0           |
+      |   0   |   1   |           1           |
+      |   1   |   0   |           1           |
+      |   1   |   1   |           0           |
+    </div>
 
-p: *plain text* (Klartext) <br/>
-k: *key* (Schlüssel) <br/>
-c: *cipher* (Verschlüsselt)
-
-
-</Tile>
-<Tile title="Entschlüsselung" >
-<div className="table-full-width">
-|  *c*  |  *k*  | *p* = *c* **XOR** *k* |
-| :---: | :---: | :-------------------: |
-|   0   |   0   |           0           |
-|   1   |   1   |           0           |
-|   1   |   0   |           1           |
-|   0   |   1   |           1           |
-</div>
-
-</Tile>
+    p: *plain text* (Klartext) <br/>
+    k: *key* (Schlüssel) <br/>
+    c: *cipher* (Verschlüsselt)
+  </Tile>
+  <Tile title="Entschlüsselung">
+    <div className="table-full-width">
+    |  *c*  |  *k*  | *p* = *c* **XOR** *k* |
+    | :---: | :---: | :-------------------: |
+    |   0   |   0   |           0           |
+    |   1   |   1   |           0           |
+    |   1   |   0   |           1           |
+    |   0   |   1   |           1           |
+    </div>
+  </Tile>
 </TileGrid>
 
 ## Bezug zu ROT13

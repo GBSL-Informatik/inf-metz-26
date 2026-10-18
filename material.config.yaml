@@ -28,6 +28,8 @@ pages: []
     as: 08-Textverarbeitung-und-Style
   - material: Information-Daten
     as: 09-Information-Daten  
+  - material: Kryptologie
+    as: 10-Kryptologie
   # - material: Repetition-2025/Repetition-GYM28-Kurz.mdx
   #   as: 08-Repetition-IN-GYM1/index.mdx
 29Gd:
@@ -49,3 +51,5 @@ pages: []
     as: 08-Textverarbeitung-und-Style
   - material: Information-Daten
     as: 09-Information-Daten
+  - material: Kryptologie
+    as: 10-Kryptologie
