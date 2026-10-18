@@ -2,9 +2,187 @@
 page_id: d8fd7489-ae42-4284-b135-9187e1ef45ae
 ---
 
-# `for`-Schleife 🔁
+import Finding from '@tdev-components/Finding';
+import Steps from '@tdev-components/Steps';
+import Strukto from '@tdev-components/VisualizationTools/Strukto';
+
+# Wiederholungen 🔁
+
+Im vorherigen Kapitel haben Sie eine Treppe gezeichnet. Das Programm könnte in etwas so aussehen:
+
+:::flex{justify=space-between align=center}
+::br{flexBasis=200px grow=1}
+```py live_py slim
+from turtle import *
+
+left(90)
+forward(17)
+right(90)
+forward(29)
+left(90)
+forward(17)
+right(90)
+forward(29)
+left(90)
+forward(17)
+right(90)
+forward(29)
+left(90)
+forward(17)
+right(90)
+forward(29)
+left(90)
+forward(17)
+right(90)
+forward(29)
+```
+::br{grow=0.1 flexBasis=1em empty=true}
+::br{flexBasis=200px}
+![](./img/stairs.svg)
+::br{grow=1 flexBasis=1em empty=true}
+:::
+
+<Finding title="Was stellen Sie beim Treppen-Programm fest?">
+
+- Das Programm ist lang 🙄
+- man sieht nicht auf einen Blick,
+  - wie viele Stufen die Treppe hat
+  - ob alle Stufen gleich breit und hoch sind
+- Um die Stufenbreite oder die Stufenhöhe anzupassen, müssen viele Zeilen verändert werden
+- Es kommt immer wieder dieselbe Sequenz vor:
+    ```py
+    left(90)
+    forward(17)
+    right(90)
+    forward(29)
+    ```
+- **wir sind zu faul, um immer wieder dieselbe Sequenz aufzuschreiben (oder zu Copy&Pasten)**
+
+</Finding>
+
+## Wiederholen von Sequenzen
+
+Ein Algorithmus kann Sequenzen wiederholt ausführen. Die zu wiederholende Sequenz ist immer eingerückt (im Vergleich zur vorhergehenden Zeile) und wird mit einem Doppelpunkt `:` eingeleitet.
+
+:::flex
+::br{flexBasis=200px}
+```py live_py slim
+from turtle import *
+
+for i in range(5):
+    left(90)
+    forward(17)
+    right(90)
+    forward(29)
+```
+::br{grow=0.1 empty=true flexBasis=1em}
+::br{flexBasis=200px alignSelf=flex-end}
+<Strukto program={[
+    {
+        type: 'repeat', 
+        code: <span><u>5</u> mal wiederholen:</span>,
+        block: [
+            {type: 'step', code: <span><u>90</u>° nach links</span>},
+            {type: 'step', code: <span><u>17</u> Schritte vorwärts</span>},
+            {type: 'step', code: <span><u>90</u>° nach rechts</span>},
+            {type: 'step', code: <span><u>29</u> Schritte vorwärts</span>}
+        ]
+    }
+]} />
+:::
+
+Für den Moment lesen wir das `range(5)` dabei einfach als «5-mal». Mit dem `i` beschäftigen Sie sich im nächsten Kapitel. Die ganze Zeile `for i in range(5):` können Sie also für den Moment einfach als «Wiederhole die folgenden eingerückten Anweisungen 5-mal» verstehen. Hier noch ein aderes Beispiel:
+
+![Die Anatomie einer `for`-Schleife --width=600px](./img/anatomie-for-schleife.png)
+
+wobei Sie die Anzahl der Wiederholungen natürlich an die entsprechende Situation und Aufgabe anpassen können, indem Sie die Zahl `4` in Klammern durch eine andere Zahl ersetzen.
+
+:::insight[Einfache Anpassung]
+Das obige Beispiel macht deutlich, weshalb die Wiederholung dafür sorgt, dass unser Code einfach anpassbar wird: Wenn Sie beim obigen Quadrat die Seitenlänge von `50` auf `100` verändern wollen, müssen Sie nur die Zahl auf Zeile `6` verändern: `forward(50)` wird zu `forward(100)`.
+:::
 
 ## Übungen
+
+
+::::aufgabe[Struktogramm → Python]
+<Answer type="state" id="868ad50b-1772-45f5-852b-9cd4b8650267" />
+
+Übersetzen Sie das Struktogramm in ein Python Programm. Was entsteht?
+
+:::flex{min-width=300px gap=30px}
+```py live_py title=wiederholung.py id=3d368326-dde6-414f-b494-ace1bfc2a687
+from turtle import *
+
+
+```
+::br
+<Strukto program={[
+    {
+        type: 'repeat', 
+        code: <span><u>9</u> mal wiederholen:</span>,
+        block: [
+            {type: 'step', code: <span><u>100</u> Schritte vorwärts</span>},
+            {type: 'step', code: <span><u>160</u>° nach links</span>}
+        ]
+    },
+    {type: 'step', code: 'Turtle verstecken'}
+]} />
+
+:::
+<Solution id="ab4fa558-b18a-4850-baf9-5d043fc124b9">
+
+```py live_py slim
+from turtle import *
+
+for i in range(9):
+    forward(100)
+    left(160)
+hideturtle()
+```
+</Solution>
+::::
+
+:::aufgabe[Python → Struktogramm]
+<Answer type="state" id="dfbdeec2-0728-4431-9a21-0bb26b2b526b" />
+
+Zeichnen Sie für folgendes Programm ein Struktogramm auf ein Blatt Papier. Fotografieren Sie es im Anschluss und halten Sie es im untenstehenden Textfeld fest.
+
+```py live_py slim
+from turtle import *
+
+forward(30)
+left(60)
+
+for i in range(5):
+    forward(100)
+    left(72)
+    backward(20) 
+```
+
+<Answer type="text" id="aa18fc7f-6e93-45ab-ae37-632a1b2813a4" />
+
+<Solution id="66ccc052-aa70-4c13-b94b-c0414fc52218">
+
+**Zu Beachten**:
+- Unterstrichene Parameter
+
+<Strukto program={[
+    {type: 'step', code: <span><u>30</u> Schritte vorwärts</span>},
+    {type: 'step', code: <span><u>60</u>° nach links</span>},
+    {
+        type: 'repeat', 
+        code: <span><u>5</u> mal wiederholen:</span>,
+        block: [
+            {type: 'step', code: <span><u>100</u> Schritte vorwärts</span>},
+            {type: 'step', code: <span><u>72</u>° nach links</span>},
+            {type: 'step', code: <span><u>20</u> Schritte rückwärts</span>},
+        ]
+    }
+]} />
+
+</Solution>
+:::
+
 ::::aufgabe[Aufgabe 1]
 <TaskState id='c093bbad-6fff-41b4-9db9-f1bbc6faaeb7' />
 Verwenden Sie eine **Schleife**, um mit der Turtle ein regelmässiges Sechseck mit Seitenlänge `100` zu zeichnen.
@@ -228,9 +406,63 @@ Zeichnen Sie mit der Turtle eine solche Perlenkette mit 18 Perlen. Die Turtle so
 ::::
 
 ## Verschachtelte Schleifen
+
+Stellen Sie sich vor wir wollen das folgende Muster mit Hilfe einer for-Schleife zeichnen:
+
+![--width=200px](./img/verschachtelt.svg)
+
+Das Programm könnte wie folgt aussehen:
+
+```py live_py slim
+from turtle import *
+
+for i in range(5):
+    forward(40)
+    
+    forward(10)
+    left(72)
+    forward(10)
+    left(72)
+    forward(10)
+    left(72)
+    forward(10)
+    left(72)
+    forward(10)
+    left(72)
+
+done()
+```
+
+In der wiederholten Sequenz hat es aber immer noch einen repetitiven Befehl drin (mehrere aufeinanderfolgende `forward(10)` und `left(72)`). Das können wir noch optimieren, indem wir eine Wiederholung innerhalb einer Wiederholung verwenden:
+```py live_py slim
+from turtle import *
+
+for i in range(5):
+    forward(40)
+    
+    for j in range(5):
+        forward(10)
+        left(72)
+
+done()
+```
+
+
+Das Ergebnis ist eine sogenannte **verschachtelte** Wiederholung. Dabei haben wir immer eine **innere** und eine **äussere** Wiederholung: Die innere Wiederholung ist die auf den Zeilen 6-8, die äussere ist die auf den Zeilen 3-8. **Das Ausführen der inneren Wiederholung ist Teil der Sequenz der äusseren Wiederholung.** Die innere Wiederholung ist also quasi ein «Schritt» der äusseren Wiederholung.
+
+
+:::insight[Beliebige Verschachtlung]
+Wiederholungen können grundsätzlich beliebig tief verschachtelt werden: Auch die innere Wiederholung kann selbst wieder eine innere Wiederholung enthalten, die selbst auch wiederum eine innere Wiederholung enthält, und so weiter.
+:::
+
 ::::aufgabe[Aufgabe 8]
-<TaskState id='543b637e-0d17-4527-bf5e-e719f5cfd6b7' />
-Analysieren Sie das folgende Programm. Versuchen Sie auf einem Blatt Papier herauszufinden, was hier gezeichnet wird.
+<TaskState id='e43987c5-dfdc-42ec-9535-73c50811e1a7' />
+<Steps>
+1. Analysieren Sie das untenstehende Programm. Versuchen Sie auf einem Blatt Papier herauszufinden, was hier gezeichnet wird.
+2. Machen Sie mit der **Laptop**-Webcam ein Foto von Ihrer Zeichnung und fügen Sie es hier ein:
+   <QuillV2 id="de370984-4214-4b0c-8c3f-7f3467114f0c" />
+3. Kopieren Sie den Code anschliessend unten in den Code Editor und führen Sie das Programm aus, um Ihre Vermutung zu überprüfen.
+</Steps>
 
 ```py
 from turtle import *
@@ -246,14 +478,56 @@ for i in range(5):
 done()
 ```
 
-Kopieren Sie den Code anschliessend hier in den Code Editor und führen Sie das Programm aus, um Ihre Vermutung zu überprüfen.
-
 ```py live_py slim
 
 ```
 ::::
 
-::::aufgabe[Aufgabe 9]
+:::aufgabe[Aufgabe 9]
+<Answer type="state" id="2bdc6e12-b4c4-4cc3-a876-6f0638d15ea8" />
+
+Zeichnen Sie für folgendes Programm ein Struktogramm und halten Sie dieses fest.
+
+```py live_py slim
+from turtle import *
+
+for i in range(5):
+    left(72)
+    for i in range(4):
+        forward(20)
+        left(90)
+    forward(100) 
+```
+<Answer type="text" id="f04dd751-ffcc-4e61-b0ad-35a14aa75296" />
+
+<Solution id="0fcf0d21-6089-4074-b54a-b748b847ac97">
+
+**Zu Beachten**:
+- die eingerückten Code-Zeilen werden wiederholt, auch wenn darin Wiederholungen vorkommen.
+- Unterstrichene Parameter
+
+<Strukto program={[
+    {
+        type: 'repeat', 
+        code: <span><u>5</u> mal wiederholen:</span>,
+        block: [
+            {type: 'step', code: <span><u>72</u>° nach links</span>},
+            {
+                type: 'repeat',
+                code: <span><u>4</u> mal wiederholen:</span>,
+                block: [
+                    {type: 'step', code: <span><u>20</u> Schritte vorwärts</span>},
+                    {type: 'step', code: <span><u>90</u>° nach links</span>},
+                ]
+            },
+            {type: 'step', code: <span><u>100</u> Schritte vorwärts</span>},
+        ]
+    }
+]} />
+</Solution>
+:::
+
+::::aufgabe[Aufgabe 10]
 <TaskState id='343e3e24-1de6-4f6e-86fb-47834de3d9ab' />
 Wie man mit einer Schleife ein Quadrat zeichnet, wissen Sie bereits. Nun sollen Sie folgendes Bild zeichnen, welches aus 20 Quadraten (je mit einer Seitenlänge von `100`) besteht, die je 18° zueinander verdreht sind.
 
@@ -261,7 +535,7 @@ Verwenden Sie dazu zwei ineinander **verschachtelte** `for`-Schleifen: also eine
 
 ![--width=300px](img/a9.png)
 
-```py live_py title=aufgabe__9.py id=a3a3ebeb-88ca-485e-b7a8-81aabfe73d4f
+```py live_py title=aufgabe__10.py id=a3a3ebeb-88ca-485e-b7a8-81aabfe73d4f
 ```
 
 <Solution id='078b3347-268d-4f1e-b220-be3c8821c778'>
@@ -282,7 +556,7 @@ Verwenden Sie dazu zwei ineinander **verschachtelte** `for`-Schleifen: also eine
 </Solution>
 ::::
 
-::::aufgabe[Aufgabe 10]
+::::aufgabe[Aufgabe 11]
 <TaskState id='32b05a45-54e1-42c3-a2a0-23f708e3f0c6' />
 Zeichnen Sie die folgende Figur wiederum mit zwei ineinander verschachtelten `for`-Schleifen. Die innere `for`-Schleife zeichnet ein Quadrat.
 
@@ -292,7 +566,7 @@ Zeichnen Sie die folgende Figur wiederum mit zwei ineinander verschachtelten `fo
 Gehen Sie mit der Turtle zuerst ein bisschen zurück, damit sie nicht aus dem Fenster rennt. Verwenden Sie dazu die Befehle `back()`, `penup()` und `pendown()`.
 :::
 
-```py live_py title=aufgabe__10.py id=f51b8cbe-ed82-4e14-bdba-4b76d96427c7
+```py live_py title=aufgabe__11.py id=f51b8cbe-ed82-4e14-bdba-4b76d96427c7
 ```
 
 <Solution id='a910e081-fd6b-42c8-a61f-ddfa318428de'>
