@@ -1,7 +1,11 @@
 // This file is never changed by teaching-dev.
 // Use it to override or extend your app configuration.
 
+import { VersionOptions } from '@docusaurus/plugin-content-docs';
+import { PluginConfig } from '@docusaurus/types';
+import type { PluginOptions as PyodidePluginOptions } from '@tdev/pyodide-code/plugin';
 import { SiteConfigProvider } from '@tdev/siteConfig/siteConfig';
+import path from 'node:path';
 import { DevDocsNavbarItem } from './navbarItems';
 import {
     accountSwitcher,
@@ -10,14 +14,10 @@ import {
     requestTarget,
     taskStateOverview
 } from './src/siteConfig/navbarItems';
-import { PluginConfig } from '@docusaurus/types';
-import { VersionOptions } from '@docusaurus/plugin-content-docs';
 import versions from './versions.json' with { type: 'json' };
 
 const SCAVENGER_API_BASE_URL = process.env.SCAVENGER_API_BASE_URL;
 const DIRECTUS_URL = process.env.DIRECTUS_URL;
-import type { PluginOptions as PyodidePluginOptions } from '@tdev/pyodide-code/plugin';
-import path from 'node:path';
 
 const GIT_COMMIT_SHA = process.env.GITHUB_SHA || Math.random().toString(36).substring(7);
 
@@ -155,7 +155,15 @@ const getSiteConfig: SiteConfigProvider = () => {
                 DIRECTUS_URL
             })
         },
-        plugins: [brythonCodePluginConfig],
+        plugins: [
+            brythonCodePluginConfig,
+            [
+                require.resolve('@tdev/pyodide-code/plugin'),
+                {
+                    extensions: [path.join(__dirname, 'website/pyodide/clock')]
+                } satisfies PyodidePluginOptions
+            ]
+        ],
         docs: {
             ...ADMONITION_CONFIG,
             versions: VERSIONS,
