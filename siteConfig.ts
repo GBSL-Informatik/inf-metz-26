@@ -16,6 +16,8 @@ import versions from './versions.json' with { type: 'json' };
 
 const SCAVENGER_API_BASE_URL = process.env.SCAVENGER_API_BASE_URL;
 const DIRECTUS_URL = process.env.DIRECTUS_URL;
+import type { PluginOptions as PyodidePluginOptions } from '@tdev/pyodide-code/plugin';
+import path from 'node:path';
 
 const GIT_COMMIT_SHA = process.env.GITHUB_SHA || Math.random().toString(36).substring(7);
 
