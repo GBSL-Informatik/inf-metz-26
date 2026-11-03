@@ -8,6 +8,8 @@ pages: []
     as: 03-Computer-Hacks
   - material: Programmieren-2026
     as: 04-Programmieren
+  - material: IN-Biber/2025
+    as: 05-IN-Biber-2025
 
 29Gn:
   - material: Onboarding-2025
