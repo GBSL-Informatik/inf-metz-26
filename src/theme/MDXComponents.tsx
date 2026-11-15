@@ -16,6 +16,10 @@ import QuillV2 from '@tdev-components/documents/QuillV2';
 import String from '@tdev-components/documents/String';
 import TaskState from '@tdev-components/documents/TaskState';
 import ProgressState from '@tdev-components/documents/ProgressState';
+import Quiz from '@tdev-components/documents/Assessable/Quiz';
+import TrueFalseAnswer from '@tdev-components/documents/Assessable/TrueFalseAnswer';
+import ChoiceAnswer from '@tdev-components/documents/Assessable/ChoiceAnswer';
+import Hint from '@tdev-components/documents/Assessable/Feedback/Hint';
 
 export default {
     // Re-use the default mapping
@@ -35,5 +39,9 @@ export default {
     TaskState: TaskState,
     MdxPage: MdxPage,
     MdxComment: MdxComment,
-    ProgressState: ProgressState
+    ProgressState: ProgressState,
+    Quiz: Quiz,
+    TrueFalseAnswer: TrueFalseAnswer,
+    ChoiceAnswer: ChoiceAnswer,
+    Hint: Hint
 };

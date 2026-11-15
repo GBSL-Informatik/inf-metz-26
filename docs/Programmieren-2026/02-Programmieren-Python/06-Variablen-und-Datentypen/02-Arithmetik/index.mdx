@@ -1,0 +1,171 @@
+---
+page_id: 44f891a2-6af5-4527-840e-218616eefbcf
+---
+
+# Arithmetik
+In Python können Sie arithmetische Ausdrücke verwenden. Die wichtigsten Operatoren sind:
+
+| Operation | Symbol | Beispiel | Ergebnis des Beispiels |
+| --------- | ------ | -------- | ---------------------- |
+| Addition | `+` | `14 + 5` | `19` |
+| Subtraktion | `-` | `14 - 5` | `9` |
+| Multiplikation | `*` | `14 * 5` | `70` |
+| Division | `/` | `14 / 5` | `2.8` |
+| Ganzzahldivision (Division mit Rest) | `//` | `14 // 5` | `2` |
+| Modulo (Rest der Division) | `%` | `14 % 5` | `4` |
+| Potenzieren ($a^b$) | `**` | `14 ** 5` | `537824` |
+
+:::info[Punkt vor Strich]
+Aus der Mathematik wissen Sie:
+
+$$3 + 5 \cdot 2 = 13$$
+
+denn es gilt die Regel «Punkt vor Strich»: Zuerst wird die Multiplikation $5 \cdot 2 = 10$ berechnet und erst danach mit $3$ addiert.
+
+Herkömmliche Taschenrechner (und viele Programmiersprachen) setzen diese Regel normalerweise nicht selbst um. Wir müssen sie mit Klammern erzwingen. Python hält sich allerdings an diese Regel. **Der Lesbarkeit halber kann es aber dennoch sinnvoll sein, explizit Klammern zu verwenden.**
+:::
+
+## Theorieaufgaben
+:::aufgabe[Warum nicht vorher ausrechnen?]
+<TaskState id="e6ee2065-0abf-45c2-af8c-e8a907e2db9c" />
+Warum kann es nützlich sein, im Code arithmetische Ausdrücke zu verwenden, statt `14 + 5` einfach «von Hand» auszurechnen und im Code direkt das Ergebnis `19` zu verwenden? Halten Sie Ihre Überlegungen im Textfeld fest.
+
+<QuillV2 id="63e00f6f-d9fe-4dfa-a1c7-3d567abc0163" />
+
+<Solution id="166b97c4-11e1-4cc5-9078-739893eb016a">
+Arithmetische Ausdrücke sind besonders dann nützlich, wenn einer oder mehrere der Operanden durch Variablen bestimmt sind. 
+
+Ein Beispiel:
+```py live_py readonly slim
+from turtle import *
+
+seite = 50
+
+# Erstes Quadrat
+for i in range(4):
+    forward(seite)
+    left(90)
+    
+# Verschieben
+penup()
+forward(70)
+pendown()
+
+# Zweites Quadrat, doppelt so gross
+for i in range(4):
+    forward(seite * 2)  # <-- Hier macht ein arithmetischer Ausdruck Sinn.
+    left(90)
+```
+
+In diesem Fall ist der Parameter des `forward()`-Befehls auf Zeile `17` abhängig von einer Variable. Wir können seinen Wert also nicht direkt ausrechnen, ohne dass wir den Nutzen der Variable verlieren.
+
+Abgesehen davon kann das Verwenden arithmetischer Ausdrücke auch dann sinnvoll sein, wenn unser Code dadurch besser verständlich wird. Beispielsweise kann man in diesem Programm leicht nachvollziehen, wie der Drehwinkel berechnet wird, was nicht so klar wäre, wenn wir stattdessen einfach `left(72)` verwenden würden:
+
+```py live_py readonly slim
+from turtle import *
+
+for i in range(5):
+    forward(50)
+    left(360 / 5)  # Die Turtle macht einen Kreis (360°) und "biegt" dabei 5x ab.
+```
+</Solution>
+:::
+
+:::aufgabe[Rechnen]
+<TaskState id="3ea3f282-eaac-4ea0-803c-07af7ae2d0b2" />
+Berechnen Sie diese Aufgaben von Hand. Geben Sie das Ergebnis als Zahl ins Textfeld ein und prüfen Sie Ihre Antwort.
+
+| Aufgabe | Resultat |
+| ------- | -------- |
+| `4 + 3 * 9` | <String solution="31" id="f700084a-a3fd-44ea-b0ae-a1381fcbc940" /> |
+| `(4 + 3) * 9` | <String solution="63" id="3444fa88-ab46-437b-9bd6-5eda0d9ef612" /> |
+| `21 / 7` | <String solution="3" id="c337262b-30d1-4259-bbff-362a66016019" /> |
+| `5 / 2` | <String solution="2.5" id="c46cc074-087b-4f49-980d-cb128cb0b28a" /> |
+| `5 // 2` | <String solution="2" id="e4c5975a-dffb-40d3-920f-f2049d40574c" /> |
+| `5 % 2` | <String solution="1" id="2a9a7683-bacf-4814-bf4f-c13f858290d9" /> |
+| `2 ** 5` | <String solution="32" id="6bde7c18-5820-4b06-b5d2-c29003c268ff" /> |
+| `(3 * ((((5 ** 2) - 1) / 6) - 1)) ** ((14 - 6) / 4)` | <String solution="81" id="fca67493-f49d-4205-af6b-fe9c7c94372a" /> |
+:::
+
+## Programmieraufgaben
+::::aufgabe[Anpassbarer Kreis]
+<TaskState id='fdaa612b-b6d7-4b3b-9862-7063219637fe' />
+
+Vervollständigen Sie dieses angefangene Turtle-Programm so, dass die Turtle einen Kreis mit dem festgelegten `umfang` zeichnet. Als Annäherung für die Zahl $\pi$ können Sie den Wert `3.14` verwenden.
+
+:::tip[Umfang, Durchmesser, Radius]
+- Für einen Kreis mit Umfang $U$ und einen Durchmesser $d$ gilt $U = d \cdot \pi$.
+- Der Befehl `circle(r)` zeichnet einen Kreis mit **Radius** `r`.
+:::
+
+```py live_py id=88d264d2-b100-4aa3-b1ad-5727e0acfc8b
+from turtle import *
+
+shape('turtle')
+
+umfang = 290
+```
+
+<Solution id='c7bef16f-ac77-4898-b8cd-aced858d790f'>
+  ```py live_py readonly slim
+  from turtle import *
+
+  shape('turtle')
+
+  umfang = 290
+
+  durchmesser = umfang / 3.14
+  radius = durchmesser / 2
+
+  circle(radius)
+  ```
+</Solution>
+::::
+
+::::aufgabe[Wachsende Quadrate]
+<TaskState id="ca426965-9fcb-4537-adc8-4fa34f4521c0" />
+
+Schreiben Sie ein Programm, das diese vier wachsenden Quadrate zeichnet:
+
+![--width=300px](img/wachsende-quadrate.svg)
+
+Die Seitenlänge des zweiten Quadrats ist doppelt so lang wie die des ersten Quadrats, die des dritten Quadrats dreimal so lang und die des vierten Quadrats viermal so lang. 
+
+Unten ist ein angefangenes Programm mit einer verschachtelten `for`-Schleife, das Sie vervollständigen können. Die Schleifenstruktur (verschachtelte `for`-Schleife) dürfen Sie nicht verändern – Sie dürfen aber natürlich den Inhalt der Schleifen anpassen.
+
+Wenn Sie den Wert der Variablen `seite` z.B. auf `10` setzen, dann sollten sich die Seitenlängen der Quadrate verändern, die **Verhältnisse der Seitenlängen** zueinander aber **gleich bleiben**.
+
+```py live_py id=c00a81d3-0453-4f5d-a315-1cd256900fc9
+from turtle import *
+
+seite = 20
+
+hideturtle()
+for i in range(4):
+    for j in range(4):
+        # Ihr Code ab hier...
+```
+
+:::tip[Tipp 1]
+Für diese Aufgabe benötigen Sie einen der beiden Schleifenzähler (`i`, `j`).
+:::
+
+:::tip[Tipp 2]
+Es ist auch möglich, dass Sie etwas **ausserhalb** der **inneren Schleife** machen müssen.
+:::
+
+<Solution id="514eaa86-926e-491b-90d0-0d1452f9fd9c">
+```py live_py readonly slim
+from turtle import *
+
+seite = 20
+
+hideturtle()
+for i in range(4):
+    for j in range(4):
+        forward(seite * (i + 1))
+        left(90)
+    forward(seite * (i + 1))
+```
+</Solution>
+::::
